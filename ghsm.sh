@@ -1,6 +1,6 @@
 # atomizeur
 # Sept. 20, 2025
-# GHPM - GitHub Package Manager
+# GH-SM - GitHub Source (Code) Manager
 # A simple script to search, clone, build, and install GitHub repositories.
 
 #!/bin/bash
