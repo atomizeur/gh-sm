@@ -1,6 +1,6 @@
 # Atomizeur
 # Sept. 20, 2025
-# Setup/install ghpm (GitHub Package Manager)
+# Setup/install GH-SM (GitHub Source (Code) Manager)
 #!/bin/bash
 
 # Check for .github directory in home folder
@@ -17,11 +17,11 @@ echo "Installing dependencies..."
 sudo apt-get update
 sudo apt-get install -y curl git jq make cmake ninja-build build-essential gettext fakeroot devscripts python3-pip python3-setuptools python3-wheel
 
-# Create ghpm alias
+# Create ghsm alias
 # Check if alias already exists in .bashrc
-if grep -q "alias ghpm=" /home/$USER/.bashrc; then
-  echo "ghpm alias already exists in .bashrc, skipping..."
+if grep -q "alias ghsm=" /home/$USER/.bashrc; then
+  echo "ghsm alias already exists in .bashrc, skipping..."
 else
-  echo "Creating ghpm alias in .bashrc..."
-  echo "alias ghpm='bash /home/$USER/shell/ghpm/ghpm.sh'" >>/home/$USER/.bashrc
+  echo "Creating ghsm alias in .bashrc..."
+  echo "alias ghsm='bash /home/$USER/shell/ghsm/ghsm.sh'" >>/home/$USER/.bashrc
 fi
